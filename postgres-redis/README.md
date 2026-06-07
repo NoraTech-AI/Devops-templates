@@ -1,34 +1,34 @@
 # Postgres + Redis Stack
 
-## سرویس‌ها
+## Services
 - PostgreSQL 15 Alpine
 - Redis 7 Alpine
 
-## اجرا
+## Start
 ```bash
 docker compose up -d
 ```
 
-## متوقف کردن
+## Stop
 ```bash
 docker compose down
 ```
 
-## حذف کامل با داده‌ها
+## Remove everything including volumes
 ```bash
 docker compose down -v
 ```
 
-## اتصال به دیتابیس
+## Connect to database
 ```bash
 docker exec -it postgres psql -U myuser -d mydb
 ```
 
-## اتصال به Redis
+## Connect to Redis
 ```bash
 docker exec -it redis redis-cli -a myredispassword
 ```
 
-## نکات مهم
-- پسوردها رو حتماً عوض کن
-- برای production از .env file استفاده کن
+## Important notes
+- Change all passwords before using in production
+- Use .env file for sensitive values

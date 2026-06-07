@@ -1,4 +1,4 @@
--- این فایل موقع اولین اجرا اتوماتیک اجرا میشه
+-- This file runs automatically on first startup
 CREATE TABLE IF NOT EXISTS users (
   id SERIAL PRIMARY KEY,
   name VARCHAR(100),
